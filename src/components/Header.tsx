@@ -8,7 +8,7 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
-import userImg from '../assets/thiago.png';
+import userImg from '../assets/avatar.png';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 
@@ -21,7 +21,7 @@ export function Header() {
             setUserName(user || '');
         }
 
-        loadStorageUserName
+        loadStorageUserName();
     },[]);
 
     return (
